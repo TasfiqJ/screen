@@ -64,6 +64,7 @@
 	"dependencies": {
 		"ajv": "^8.17.1",
 		"ansis": "^3.17.0",
+		"axios": "^1.9.0",
 		"console-stamp": "^3.1.2",
 		"envsub": "^4.1.0",
 		"eslint": "^9.23.0",
@@ -77,6 +78,7 @@
 		"moment": "^2.30.1",
 		"node-ical": "^0.20.1",
 		"pm2": "^5.4.3",
+		"request": "^2.88.2",
 		"socket.io": "^4.8.1",
 		"suncalc": "^1.9.0",
 		"systeminformation": "^5.25.11",

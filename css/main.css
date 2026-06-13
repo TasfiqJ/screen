@@ -18,6 +18,21 @@
   --gap-modules: 30px;
 }
 
+/* Make digital clock time bigger */
+.clock .time {
+  font-size: 200px;  /* Adjust as needed */
+  font-weight: bold;
+}
+
+/* Optional: Make the date text bigger too */
+.clock .date {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+
+
+
 html {
   cursor: none;
   overflow: hidden;
@@ -239,3 +254,45 @@ sup {
   border-spacing: 0;
   border-collapse: separate;
 }
+/* ── Weather Module Overrides ─────────────────────────────────────────── */
+
+/* Enlarge the overall module box */
+.module.weather {
+  width: 300px !important;          /* make the weather box wider */
+  font-size: 1.3rem !important;     /* increase base text size */
+}
+
+/* Current weather icon & temperature */
+.weather .weatherIcon {
+  font-size: 3rem !important;       /* bigger sunny/cloud icon */
+}
+.weather .temp {
+  font-size: 2.5rem !important;     /* larger temperature text */
+}
+
+/* Detail lines (humidity, wind, etc.) */
+.weather .small {
+  font-size: 1.2rem !important;
+}
+
+/* Forecast table tweaks */
+.weather .forecast {
+  margin-top: 10px;
+}
+.weather .forecast .day {
+  font-size: 1.2rem !important;     /* bigger day names */
+}
+.weather .forecast .icon {
+  width: 48px !important;           /* larger forecast icons */
+  height: 48px !important;
+}
+.weather .forecast .temp {
+  font-size: 1.5rem !important;     /* larger forecast temps */
+}
+
+/* Ensure header (“Weather Forecast”) scales too */
+.weather header {
+  font-size: 1.1rem !important;
+  margin-bottom: 8px;
+}
+
