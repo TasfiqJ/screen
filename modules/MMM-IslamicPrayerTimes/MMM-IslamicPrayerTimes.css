@@ -1,0 +1,66 @@
+/* Base container – modestly scaled up */
+.MMM-IslamicPrayerTimes {
+    font-family: var(--font-primary);
+    color: var(--color-text-bright);
+    text-align: center;
+    padding: 0.3em 0.5em;
+    transform: translateY(-10px);
+    font-size: 1.05em; /* up from 1em */
+  }
+  
+  /* Countdown at top – slightly larger */
+  .MMM-IslamicPrayerTimes .countdown {
+    font-size: 1.5em;  /* up from 1.15em */
+    font-weight: 600;
+    padding-bottom: 0.2em;
+    margin-bottom: 0.4em;
+    border-bottom: 1px solid var(--color-text-dimmed);
+  }
+  
+  .MMM-IslamicPrayerTimes .countdown .label {
+    opacity: 0.8;
+    margin-right: 0.2em;
+  }
+  
+  .MMM-IslamicPrayerTimes .countdown .value {
+    font-variant-numeric: tabular-nums;
+  }
+  
+  /* Prayer times list */
+  .MMM-IslamicPrayerTimes .prayerTimes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+  }
+  
+  /* Prayer row */
+  .MMM-IslamicPrayerTimes .prayerTime {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2em 0;
+    border-bottom: 1px solid rgba(var(--color-text-dimmed-rgb), 0.3);
+  }
+  
+  /* Left side: image + name */
+  .MMM-IslamicPrayerTimes .prayerTime .left {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Unique image per prayer, now monochrome */
+  .MMM-IslamicPrayerTimes .prayerTime .prayer-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.4em;
+    filter: grayscale(100%);
+  }
+  
+  /* Name & time – slightly bigger */
+  .MMM-IslamicPrayerTimes .prayerTime .name,
+  .MMM-IslamicPrayerTimes .prayerTime .time {
+    font-weight: 500;
+    font-size: 1.4em; /* up from 1em */
+    font-variant-numeric: tabular-nums;
+  }
+  
